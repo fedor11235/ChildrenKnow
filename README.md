@@ -22,6 +22,6 @@ Creating a virtual environment python
 # Running the client
  > npm --prefix frontend install
  > npm --prefix frontend run build
- > npm --prefix frontend run server
+ > npm --prefix frontend run dev
 
 Project in development
