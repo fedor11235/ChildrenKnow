@@ -8,7 +8,7 @@
     img.face__img(src="static/main.png")
 
   .list-of-courses
-    #courses.list-of-courses__title Наши курсы
+    .list-of-courses__title#list-of-courses__title Наши курсы
     .list-of-courses__coutainer
       .list-of-courses__column1
         .list-of-courses__course Звукорежессура

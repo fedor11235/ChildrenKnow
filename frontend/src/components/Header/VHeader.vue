@@ -4,10 +4,10 @@
   .header-block__logo-text ChildrenKnow
   .header-block__menu
     a.header-block__navlink(href="http://localhost:8080") Блок
-    a.header-block__navlink(href="/#courses") Курсы
-    a.header-block__navlink(href="/#pros") Плюсы курсов
-    a.header-block__navlink(href="/#how") Как проходят наши курсы
-    a.header-block__navlink(href="/#recording") Запись
+    a.header-block__navlink(href="/#list-of-courses__title") Курсы
+    a.header-block__navlink(href="/#block-about-courses") Плюсы курсов
+    a.header-block__navlink(href="/#block-how-lessons") Как проходят наши курсы
+    a.header-block__navlink(href="/#block-recording") Запись
   hr.header-block__delimiter
 </template>
 

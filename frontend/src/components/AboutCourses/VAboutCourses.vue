@@ -1,5 +1,5 @@
 <template lang="pug">
-#pros.block-about-courses.padding-html
+.block-about-courses.padding-html#block-about-courses
   .block-about-courses__title.margin_in_width Плюсы наших курсов
   .block-about-courses__coutainer.margin_in_width
     ul

@@ -1,5 +1,5 @@
 <template lang="pug">
-#how.block-how-lessons
+.block-how-lessons#block-how-lessons
   .block-how-lessons__title Как проходят уроки
   .block-how-lessons__coutainer
     .block-how-lessons__border
