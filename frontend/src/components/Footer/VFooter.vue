@@ -1,17 +1,17 @@
 <template lang="pug">
 .block-footer
   .block-footer__coutainer
-    ul.block-footer__info О школе
-      li.block-footer__text Отзывы
-      li.block-footer__text Вопросы и ответы
-      li.block-footer__text Контактные данные
+    ul.block-footer__info.html__main-text_white О школе
+      li.block-footer__text.html__subtext_white Отзывы
+      li.block-footer__text.html__subtext_white Вопросы и ответы
+      li.block-footer__text.html__subtext_white Контактные данные
 
-    ul.block-footer__info Контакты
-      li.block-footer__text f.avdeev@list.ru
-      li.block-footer__text +7 9027369322
-      li.block-footer__text WatsApp
-      li.block-footer__text Viber
-      li.block-footer__text Telegram
+    ul.block-footer__info.html__main-text_white Контакты
+      li.block-footer__text.html__subtext_white f.avdeev@list.ru
+      li.block-footer__text.html__subtext_white +7 9027369322
+      li.block-footer__text.html__subtext_white WatsApp
+      li.block-footer__text.html__subtext_white Viber
+      li.block-footer__text.html__subtext_white Telegram
 
   img.block-footer__img1(src="static/Vector3.png")
   img.block-footer__img2(src="static/Vector4.png")
@@ -48,14 +48,7 @@
 
 .block-footer__info {
   margin: 20px;
-  color: #ffffff;
-  font: normal 30px Roboto;
-}
 
-.block-footer__info {
-  margin: 20px;
-  font: normal 30px Roboto;
-  color: #ffffff;
 }
 
 .block-footer__text {

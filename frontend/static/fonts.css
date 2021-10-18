@@ -10,6 +10,18 @@
     color: #fff;
 }
 
+.html__title_black {
+    font: normal bold 55px Roboto;
+    line-height: 64px;
+    color: #000;
+}
+
+.html__title_blue {
+    font: normal bold 55px Roboto;
+    line-height: 64px;
+    color: #014dd6;
+}
+
 .html__subtitle_white {
     font: normal 36px Roboto;
     color: #fff;
@@ -37,7 +49,18 @@
     color: #fff;
 }
 
+.html__subtext_white {
+    font: normal 24px Roboto;
+    color: #fff;
+}
+
 .html__subtext_black {
     font: normal 24px Roboto;
     color: #000;
 }
+
+.html__subtext_grey {
+    font: normal 24px Roboto;
+    color: #888888;
+}
+
