@@ -1,21 +1,21 @@
 <template lang="pug">
 .block-about-courses.padding-html#block-about-courses
-  .block-about-courses__title.margin_in_width Плюсы наших курсов
+  .block-about-courses__title.margin_in_width.html__title_white  Плюсы наших курсов
   .block-about-courses__coutainer.margin_in_width
     ul
-      li.block-about-courses__text
+      li.block-about-courses__text.html__main-text_white 
         span Показываем, как с пользой <br> проводить время за компьютером
-      li.block-about-courses__text 
+      li.block-about-courses__text.html__main-text_white 
         span Подберем курс по вашим <br> интересам или выберет готовыую <br> программу
-      li.block-about-courses__text
+      li.block-about-courses__text.html__main-text_white 
         span Ребенок найдет новымх друзей по <br> увлечениям
-      li.block-about-courses__text
+      li.block-about-courses__text.html__main-text_white 
         span Индивидуальный темп обучения
-      li.block-about-courses__text
+      li.block-about-courses__text.html__main-text_white 
         span Занимайтесь когда вам удобно
-      li.block-about-courses__text
+      li.block-about-courses__text.html__main-text_white 
         span Дети учатся с удовольствием
-      li.block-about-courses__text
+      li.block-about-courses__text.html__main-text_white 
         span Экономим время в дороге
 
   img.block-about-courses__img(src="static/Vector1.png")
@@ -35,8 +35,6 @@
 }
 
 .block-about-courses__title {
-  font: normal bold 55px Roboto;
-  color: #ffffff;
   margin-top: 56px;
 }
 
@@ -49,8 +47,6 @@
 }
 
 .block-about-courses__text {
-  font: normal 30px Roboto;
-  color: #ffffff;
   margin-bottom: 70px;
 }
 
@@ -74,9 +70,5 @@
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 </style>

@@ -1,0 +1,43 @@
+.html__main-title_black {
+    font: normal bold 75px Roboto;
+    line-height: 88px;
+    color: #000;
+}
+
+.html__title_white {
+    font: normal bold 55px Roboto;
+    line-height: 64px;
+    color: #fff;
+}
+
+.html__subtitle_white {
+    font: normal 36px Roboto;
+    color: #fff;
+}
+
+.html__main-text_black {
+    font: normal 30px Roboto;
+    line-height: 35px;
+    color: #000;
+}
+
+.html__main-text_white {
+    font: normal 30px Roboto;
+    line-height: 35px;
+    color: #fff;
+}
+
+.html__text_black {
+    font: normal 28px Roboto;
+    color: #000;
+}
+
+.html__text_white {
+    font: normal 28px Roboto;
+    color: #fff;
+}
+
+.html__subtext_black {
+    font: normal 24px Roboto;
+    color: #000;
+}
