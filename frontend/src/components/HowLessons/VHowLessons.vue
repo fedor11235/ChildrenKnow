@@ -1,65 +1,52 @@
 <template lang="pug">
-.how-lessons#how
-    .how-lessons-title Как проходят уроки
-    .how-lessons-couteiner 
-        .how-lessons-border
-            .how-lessons-border-text1.krasivo Вспоминаем тему прошлого урока и проверяем<br> домашнее задание.
-            img(src='static/arrow.png')
-            .how-lessons-border-text2.krasivo Изучаем новую тему и решаем новые задачи<br> вместе с преподователем
-            img(src='static/arrow.png')
+#how.block-how-lessons
+  .block-how-lessons__title Как проходят уроки
+  .block-how-lessons__coutainer
+    .block-how-lessons__border
+      .block-how-lessons__text Вспоминаем тему прошлого урока и проверяем<br> домашнее задание.
+      img(src="static/arrow.png")
+      .block-how-lessons__text Изучаем новую тему и решаем новые задачи<br> вместе с преподователем
+      img(src="static/arrow.png")
 
-            .how-lessons-border-text3.krasivo Самостоятельное решение более сложных<br> задачи и отых ввиде игровых заданий
-            img(src='static/arrow.png')
+      .block-how-lessons__text Самостоятельное решение более сложных<br> задачи и отых ввиде игровых заданий
+      img(src="static/arrow.png")
 
-            .how-lessons-border-text4.krasivo Преподаватель подводит итоги, повторяют<br> вместе с учениками пройденый материал и<br> готовятся к следующему уроку
-
-
-
+      .block-how-lessons__text Преподаватель подводит итоги, повторяют<br> вместе с учениками пройденый материал и<br> готовятся к следующему уроку
 </template>
 
 <style>
-
-
-.krasivo {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-
-    color: #FFFFFF;
-    margin:30px;
+.block-how-lessons {
+  height: 1023px;
+  background: linear-gradient(63.43deg, #004ad5 0%, #00befd 100.93%);
 }
 
-.how-lessons {
-    height: 1023px;
-    background: linear-gradient(63.43deg, #004AD5 0%, #00BEFD 100.93%);
+.block-how-lessons__text {
+  text-align: center;
+
+  font: normal 36px Roboto;
+  color: #ffffff;
+  margin: 30px;
 }
 
-.how-lessons-title {
-    text-align: center;
-    padding:60px 120px 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 55px;
-    line-height: 64px;
-    color: #FFFFFF;
+.block-how-lessons__title {
+  text-align: center;
+  padding: 60px 120px 0;
+  font: normal bold 55px Roboto;
+  color: #ffffff;
 }
 
-.how-lessons-couteiner {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 52px;
+.block-how-lessons__coutainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 52px;
 }
 
-.how-lessons-border {
-    display: flex;
-    width: 1069px;
-    height: 755px;
-    border: 3px solid #5200FF;
-    flex-direction: column;
-    align-items: center;
+.block-how-lessons__border {
+  display: flex;
+  width: 1069px;
+  height: 755px;
+  border: 3px solid #5200ff;
+  flex-direction: column;
+  align-items: center;
 }
 </style>

@@ -1,5 +1,6 @@
 <template lang="pug">
   #app
+    header-block
     main-block
     about-courses
     how-lessons
@@ -8,26 +9,22 @@
 
 </template>
 <script>
-import CreateNote from './components/CreateNote'
-import NoteList from './components/NoteList'
 import VMainBlock from './components/MainBlock/VMainBlock'
-import VListOfCourses from './components/ListOfCoursesBlock/VListOfCourses'
 import VAboutCourses from './components/AboutCourses/VAboutCourses'
 import VHowLessons from './components/HowLessons/VHowLessons'
 import VRecording from './components/Recording/VRecording'
 import VFooter from './components/Footer/VFooter'
+import VHeader from './components/Header/VHeader'
 
 export default {
   name: 'app',
   components: {
-    'create-note': CreateNote,
-    'note-list': NoteList,
     'main-block': VMainBlock,
-    'list-of-courses': VListOfCourses,
     'about-courses': VAboutCourses,
     'how-lessons': VHowLessons,
     'recording': VRecording,
-    'footer-block': VFooter
+    'footer-block': VFooter,
+    'header-block': VHeader
   }
 }
 </script>
