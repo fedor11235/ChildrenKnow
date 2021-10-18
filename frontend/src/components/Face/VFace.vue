@@ -18,7 +18,7 @@
 }
 
 .face__content {
-  margin-bottom: 72px;
+  margin-bottom: 50px;
 }
 
 .face__button {
