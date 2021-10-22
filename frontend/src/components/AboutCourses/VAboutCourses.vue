@@ -22,8 +22,8 @@
       li.block-about-courses__text.html__main-text_white 
         span Экономим время в дороге
 
-  img.block-about-courses__img(src="./Vector1.png")
-  img.block-about-courses__img(src="./Vector2.png")
+  img.block-about-courses__img(src="./block-about-courses__img1.png")
+  img.block-about-courses__img(src="./block-about-courses__img2.png")
 </template>
 
 

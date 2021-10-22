@@ -26,7 +26,7 @@
     .list-of-courses__vertical-separation1
     .list-of-courses__vertical-separation2
     .list-of-courses__vertical-separation3
-  img.list-of-courses__img(src="./Vector5.png")
+  img.list-of-courses__img(src="./list-of-courses__img.png")
 </template>
 
 

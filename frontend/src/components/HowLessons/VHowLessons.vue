@@ -4,15 +4,15 @@
   .block-how-lessons__coutainer
     .block-how-lessons__border
       .block-how-lessons__text.html__subtitle_white_normal  Вспоминаем тему прошлого урока и проверяем<br> домашнее задание.
-      img(src="./arrow.png")
+      img(src="./block-how-lessons__arrow.png")
       .block-how-lessons__text.html__subtitle_white_normal  Изучаем новую тему и решаем новые задачи<br> вместе с преподователем
-      img(src="./arrow.png")
+      img(src="./block-how-lessons__arrow.png")
 
       .block-how-lessons__text.html__subtitle_white_normal  Самостоятельное решение более сложных<br> задачи и отых ввиде игровых заданий
-      img(src="./arrow.png")
+      img(src="./block-how-lessons__arrow.png")
 
       .block-how-lessons__text.html__subtitle_white_normal  Преподаватель подводит итоги, повторяют<br> вместе с учениками пройденый материал и<br> готовятся к следующему уроку
-  img.block-how-lessons__img(src="./Vector6.png")
+  img.block-how-lessons__img(src="./block-how-lessons__img.png")
 </template>
 
 <style>

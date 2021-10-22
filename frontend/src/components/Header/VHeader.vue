@@ -4,7 +4,7 @@
   
   .header-block__container.margin-html
     .header-block__logo
-      img(src="./header.png")
+      img(src="./header-block__logo.png")
     .header-block__menu
       a.header-block__navlink.html__subtext_black(href="http://localhost:8080") Блог
       a.header-block__navlink.html__subtext_black(href="/#list-of-courses__title") Курсы

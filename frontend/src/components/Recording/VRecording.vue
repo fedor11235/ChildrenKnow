@@ -2,8 +2,8 @@
 .block-recording#block-recording
   contact-board
 
-  img.block-recording__img1(src="./Vector3.png")
-  img.block-recording__img2(src="./Vector4.png")
+  img.block-recording__img1(src="./block-recording__img1.png")
+  img.block-recording__img2(src="./block-recording__img2.png")
 </template>
 
 <script>
