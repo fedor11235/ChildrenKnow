@@ -16,8 +16,6 @@ export default {
 </script>
 <style>
 .main-block {
-  height: 2048px;
-  padding-top:75px;
   background: linear-gradient(
     358.17deg,
     #0150d7 1.49%,

@@ -1,20 +1,34 @@
 <template lang="pug">
-.header-block.margin-html
+.header-block
   //- img.logo(src='static/logo.png')
-  .header-block__logo-text.html__text_black ChildrenKnow
-  .header-block__menu
-    a.header-block__navlink.html__text_black(href="http://localhost:8080") Блок
-    a.header-block__navlink.html__text_black(href="/#list-of-courses__title") Курсы
-    a.header-block__navlink.html__text_black(href="/#block-about-courses") Плюсы курсов
-    a.header-block__navlink.html__text_black(href="/#block-how-lessons") Как проходят наши курсы
-    a.header-block__navlink.html__text_black(href="/#block-recording") Запись
+  
+  .header-block__container.margin-html
+    .header-block__logo
+      img(src="./header.png")
+    .header-block__menu
+      a.header-block__navlink.html__subtext_black(href="http://localhost:8080") Блог
+      a.header-block__navlink.html__subtext_black(href="/#list-of-courses__title") Курсы
+      a.header-block__navlink.html__subtext_black(href="/#block-about-courses") Плюсы курсов
+      a.header-block__navlink.html__subtext_black(href="/#block-how-lessons") Как проходят наши курсы
+      a.header-block__navlink.html__subtext_black(href="/#block-recording") Запись
   hr.header-block__delimiter
 </template>
 
 <style>
 .header-block {
   position: relative;
-  height: 70px;
+}
+.header-block__container {
+  position: relative;
+  height: 72px;
+}
+
+.header-block__logo {
+  display: flex;
+  height: 66px;
+  align-items: center;
+  position: absolute;
+  left: 0;
 }
 
 .header-block__logo-text {
@@ -44,5 +58,8 @@
   background-color: #F1F1F1;
   width: 100%;
   bottom: 0;
+  margin: 0;
+  height: 1px;
+  border: none;
 }
 </style>

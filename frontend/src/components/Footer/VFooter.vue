@@ -1,6 +1,7 @@
 <template lang="pug">
 .block-footer
   .block-footer__coutainer
+    img.block-footer__logo(src="./logo.png")
     ul.block-footer__info.html__main-text_white О школе
       li.block-footer__text.html__subtext_white Отзывы
       li.block-footer__text.html__subtext_white Вопросы и ответы
@@ -13,11 +14,12 @@
       li.block-footer__text.html__subtext_white Viber
       li.block-footer__text.html__subtext_white Telegram
 
-  img.block-footer__img1(src="static/Vector3.png")
-  img.block-footer__img2(src="static/Vector4.png")
+  img.block-footer__img1(src="./Vector3.png")
+  img.block-footer__img2(src="./Vector4.png")
 </template>
 
 <style>
+
 .block-footer {
   position: relative;
   display: flex;
@@ -28,13 +30,19 @@
 
 .block-footer__coutainer {
   display: flex;
-  margin-top: 50px;
+  margin-top: 47px;
   z-index: 1;
+}
+
+img.block-footer__logo{
+
+  width: 209px;
+  height: 36px;
+
 }
 
 .block-footer__img1 {
   position: absolute;
-  top: -1px;
   left: 0;
   width: 495px;
 }
@@ -47,7 +55,7 @@
 }
 
 .block-footer__info {
-  margin: 20px;
+  margin: 0 20px;
 
 }
 

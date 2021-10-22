@@ -2,8 +2,8 @@
 .block-recording#block-recording
   contact-board
 
-  img.block-recording__img1(src="static/Vector3.png")
-  img.block-recording__img2(src="static/Vector4.png")
+  img.block-recording__img1(src="./Vector3.png")
+  img.block-recording__img2(src="./Vector4.png")
 </template>
 
 <script>
@@ -21,13 +21,13 @@ export default {
 
 .block-recording {
   position: relative;
-  height: 950px;
+  height: 1024px;
 }
 
 .block-recording__img1 {
   position: absolute;
   left: 0;
-  top: -83px;
+  top: -89px;
   z-index: -1;
 }
 

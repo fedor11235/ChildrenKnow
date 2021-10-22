@@ -3,15 +3,25 @@
   .face__info
     .face__header.html__main-title_black Изучи<br>будующую<br>профессию с<br>интузиазмом
     .face__content.html__main-text_black Обучаем детей профессям <br> будующего,<br>индивитульные онлайн-занятия
-    button.face__button.html__text_white Пробный урок
-  img.face__img(src="static/main.png")
+    button.face__button.html__text_white(onclick="location.href='#block-recording'") Пробный урок
+
+  img.face__img(src="./main.png")
 </template>
 
 <style>
+.face {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 77px;
+  height: 734px;
+  align-items: flex-start;
 
-.face__info {
-  width: 50%;
 }
+
+/* .face__img {
+  width: 601px;
+  height: 597px;
+} */
 
 .face__header {
   margin-bottom: 11px;
@@ -34,12 +44,5 @@
 
 .face__button:active {
   background: #5200ff;
-}
-
-.face__img {
-  position: absolute;
-  top: 75px;
-  right: 0;
-  text-align: center;
 }
 </style>

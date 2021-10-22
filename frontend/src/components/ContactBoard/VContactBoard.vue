@@ -23,22 +23,23 @@
     span.contact-board_color-grey.html__subtext_grey → Звонок менеджера → Пробный урок
 </template>
 
+
 <style>
 .contact-board {
-  width: 1200px;
-  height: 850px;
+  width: 1198px;
+  height: 855px;
   background-color: #5200ff;
-  margin: 80px auto;
+  margin: 86px auto;
   position: relative;
 }
 
 .contact-board__coutainer {
   display: table;
   position: absolute;
-  width: 1116px;
-  height: 750px;
+  width: 1097px;
+  height: 737px;
   background-color: #ffffff;
-  margin: 40px;
+  margin: 55px;
 }
 
 .contact-board_centered-vertically {
@@ -75,13 +76,40 @@
   height: 74px;
   margin-bottom: 15px;
   caret-color: transparent;
+  font: normal 24px Roboto;
+  color: #a37af9;
+  padding-left: 27px;
 }
 
 .contact-board__input::placeholder {
   font: normal 24px Roboto;
   color: #a37af9;
+}
+
+
+
+.contact-board__input:focus {
+  font: normal 24px Roboto;
+  color: #a37af9;
   padding-left: 27px;
 }
+
+.contact-board__input:focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+.contact-board__input:focus::-moz-placeholder {
+  color: transparent
+}
+
+.contact-board__input:focus:-moz-placeholder {
+  color: transparent
+}
+
+.contact-board__input:focus:-ms-input-placeholder {
+  color: transparent
+}
+
 
 .contact-board__button {
   width: 263px;
