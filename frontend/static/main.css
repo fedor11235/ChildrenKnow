@@ -11,3 +11,11 @@
 html {
     scroll-behavior: smooth;
   }
+
+.html_margin {
+    margin: 0 110px;
+  }
+
+.html_padding {
+    padding: 0 110px;
+  }

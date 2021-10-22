@@ -18,11 +18,6 @@
 
 }
 
-/* .face__img {
-  width: 601px;
-  height: 597px;
-} */
-
 .face__header {
   margin-bottom: 11px;
 }

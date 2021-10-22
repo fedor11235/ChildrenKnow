@@ -6,7 +6,7 @@
         .contact-board__info
           .html__title_black Запишись
           .html__title_blue На пробный урок
-          .html__main-text_black Наши консультанты <br>
+          .html__main-text_black.contact-board__text Наши консультанты <br>
             | по обучению перезвонят Вам <br>
             | и ответят на все <br>
             | интересующие Вас вопросы
@@ -45,6 +45,10 @@
 .contact-board_centered-vertically {
   display: table-cell;
   vertical-align: middle;
+}
+
+.contact-board__text {
+  margin-top:48px;
 }
 
 .contact-board_centered-horizontally {
@@ -134,5 +138,19 @@
 
 .contact-board_margin-bottom {
   margin-bottom: 36px;
+}
+
+@media screen and (max-width: 1280px) {
+  .contact-board__input {
+  font-size: 18px;
+}
+
+.contact-board__input::placeholder {
+  font-size: 18px;
+}
+.contact-board__input:focus {
+  font-size: 18px;
+  padding-left: 27px;
+}
 }
 </style>

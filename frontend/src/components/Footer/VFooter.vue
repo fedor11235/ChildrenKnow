@@ -60,7 +60,6 @@ img.block-footer__logo{
 }
 
 .block-footer__text {
-  font: normal 24px Roboto;
   list-style-type: none;
   margin: 20px 0;
   cursor: pointer;
