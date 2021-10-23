@@ -29,7 +29,9 @@
   width: 1198px;
   height: 855px;
   background-color: #5200ff;
-  margin: 86px auto;
+  margin-left: auto;
+  margin-right: auto;
+  top: 86px;
   position: relative;
 }
 
@@ -195,5 +197,108 @@
     bottom: 70px;
     left: 62px;
   }
+}
+@media screen and (max-width: 750px) {
+  .contact-board__input {
+    width: 188px;
+    height: 39px;
+  }
+
+  .contact-board__input::placeholder {
+    font-size: 15px;
+  }
+  .contact-board__input:focus {
+    font-size: 15px;
+    padding-left: 12px;
+  }
+  .contact-board {
+    width: 515px;
+    height: 364px;
+    top: 62px;
+  }
+  .contact-board__coutainer {
+    width: 471px;
+    height: 324px;
+    margin: 21px;
+  }
+  .contact-board__button {
+    width: 149px;
+    height: 35px;
+    margin-top: 2px;
+  }
+
+  .contact-board__under-the-text {
+    bottom: 40px;
+    left: 45px;
+  }
+
+  .contact-board__text {
+    margin-top: 22px;
+  }
+  .contact-board__form {
+    margin-left: 29px;
+  }
+
+  .contact-board__input {
+    margin-bottom: 11px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .contact-board__input {
+    width: 180px;
+    height: 33px;
+    margin-bottom: 3px;
+  }
+
+  .contact-board__input::placeholder {
+    font-size: 12px;
+  }
+  .contact-board__input:focus {
+    font-size: 12px;
+    padding-left: 11px;
+  }
+  .contact-board {
+    width: 307px;
+    height: 462px;
+    top: 28px;
+  }
+  .contact-board__coutainer {
+    width: 272px;
+    height: 428px;
+    margin: 17px;
+  }
+
+  .contact-board_centered-horizontally {
+    flex-direction: column;
+  }
+
+  .contact-board__info {
+    margin: auto;
+    margin-top: 5px;
+  
+  }
+
+  .contact-board__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+  }
+  .contact-board__button {
+    width: 148px;
+    height: 29px;
+    margin-top: 2px;
+  }
+
+  .contact-board__under-the-text {
+    display: none;
+  }
+
+  .contact-board__text {
+    margin-top: 30px;
+    align-items: center;
+  }
+
 }
 </style>

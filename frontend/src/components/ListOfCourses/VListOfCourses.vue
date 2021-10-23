@@ -26,6 +26,11 @@
     .list-of-courses__vertical-separation1
     .list-of-courses__vertical-separation2
     .list-of-courses__vertical-separation3
+
+    .list-of-courses__vertical-separation4
+    .list-of-courses__vertical-separation5
+    .list-of-courses__vertical-separation6
+    .list-of-courses__vertical-separation7
   img.list-of-courses__img(src="./list-of-courses__img.png")
 </template>
 
@@ -159,6 +164,98 @@
 
   .list-of-courses__vertical-separation3 {
     top: 315px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .list-of-courses__title {
+    margin-top: 26px;
+  }
+  .list-of-courses {
+    height: 480px;
+  }
+  .list-of-courses__coutainer {
+    width: 459px;
+    height: 325px;
+    margin: 37px 0 62px;
+  }
+  .list-of-courses__vertical-separation1 {
+    display: none;
+  }
+
+  .list-of-courses__vertical-separation2 {
+    display: none;
+  }
+
+  .list-of-courses__vertical-separation3 {
+    display: none;
+  }
+
+  .list-of-courses__delimiter {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .list-of-courses__title {
+    margin-top: 13px;
+  }
+  .list-of-courses {
+    height: 578px;
+  }
+  .list-of-courses__coutainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 307px;
+    height: 486px;
+    margin: 25px 0 26px;
+  }
+  .list-of-courses__vertical-separation1 {
+    display: block;
+    top: 60px;
+  }
+
+  .list-of-courses__vertical-separation2 {
+    display: block;
+    top: 120px;
+  }
+
+  .list-of-courses__vertical-separation3 {
+    display: block;
+    top: 180px;
+  }
+
+  .list-of-courses__vertical-separation4 {
+    position: absolute;
+    background-color: #5200ff;
+    top: 240px;
+    width: 84%;
+    left: 8%;
+    height: 1px;
+  }
+  .list-of-courses__vertical-separation5 {
+    position: absolute;
+    background-color: #5200ff;
+    top: 300px;
+    width: 84%;
+    left: 8%;
+    height: 1px;
+  }
+  .list-of-courses__vertical-separation6 {
+    position: absolute;
+    background-color: #5200ff;
+    top: 360px;
+    width: 84%;
+    left: 8%;
+    height: 1px;
+  }
+  .list-of-courses__vertical-separation7 {
+    position: absolute;
+    background-color: #5200ff;
+    top: 420px;
+    width: 84%;
+    left: 8%;
+    height: 1px;
   }
 }
 </style>

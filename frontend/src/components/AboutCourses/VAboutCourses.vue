@@ -20,6 +20,7 @@
 
   img.block-about-courses__img1(src="./block-about-courses__img1.png")
   img.block-about-courses__img2(src="./block-about-courses__img2.png")
+
 </template>
 
 
@@ -33,6 +34,7 @@
 .block-about-courses__title {
   position: absolute;
   top: 31px;
+  left: 110px;
   z-index: 1;
 }
 
@@ -78,6 +80,7 @@
   }
   .block-about-courses__title {
     top: 41px;
+    left: 105px;
   }
   .block-about-courses__coutainer {
     top: 130px;
@@ -93,7 +96,7 @@
     margin-bottom: 30px;
     list-style: none;
   }
-    .block-about-courses__img1 {
+  .block-about-courses__img1 {
     width: 464.5px;
     height: 484px;
   }
@@ -109,16 +112,78 @@
   }
   .block-about-courses__title {
     top: 12px;
+    left: 55px;
   }
   .block-about-courses__coutainer {
     top: 103px;
     right: 75px;
   }
+}
+
+@media screen and (max-width: 750px) {
+  .block-about-courses {
+    height: 480px;
+  }
+  .block-about-courses__title {
+    top: 26px;
+    left: 55px;
+  }
+  .block-about-courses__coutainer {
+    top: 86px;
+    right: 55px;
+  }
   .block-about-courses__text:before {
     margin-right: 3px;
     margin-bottom: 3px;
-    width: 9px;
-    height: 9px;
+    width: 6px;
+    height: 6px;
+  }
+  .block-about-courses__text {
+    margin-bottom: 17px;
+    list-style: none;
+  }
+  .block-about-courses__img1 {
+    width: 313px;
+    height: 327px;
+  }
+  .block-about-courses__img2 {
+    width: 336px;
+    height: 267px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .block-about-courses {
+    height: 510px;
+    background-image: url(block-about-courses__img3.png);
+  }
+  .block-about-courses__title {
+    position:initial;
+    text-align: center;
+    padding-top:13px;
+  }
+  .block-about-courses__coutainer {
+    position:initial;
+    margin-top:19px;
+  }
+  .block-about-courses__text:before {
+    margin-right: 3px;
+    margin-bottom: 3px;
+    width: 6px;
+    height: 6px;
+  }
+  .block-about-courses__text {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .block-about-courses__img1 {
+    display:none;
+  }
+  .block-about-courses__img2 {
+    display:none;
+  }
+  .block-about-courses__text:before {
+    display:none;
   }
 }
 </style>

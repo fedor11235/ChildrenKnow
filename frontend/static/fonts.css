@@ -192,3 +192,68 @@
     }
   
   }
+
+@media screen and (max-width: 750px) {
+    .html__main-title_black{
+        font-size: 30px;
+    }
+    .html__main-text_black {
+        font-size: 15px;
+    }
+
+    .html__text_white-face{
+        font-size: 20px;
+    }
+
+    .html__title_white {
+        font-size: 30px;
+    }
+
+    .html__subtitle_white_medium {
+        font-size: 15px;
+    }
+    .html__main-text_white {
+        font-size: 15px;
+    }
+    .html__subtitle_white_normal {
+        font-size: 15px;
+    }
+
+    .html__title_black {
+        font-size: 20px;
+    }
+    .html__title_blue {
+        font-size: 20px; 
+    }
+
+    .html__main-text_black {
+        font-size: 15px; 
+    }
+
+    .html__subtext_black {
+        font-size: 10px; 
+    }
+
+    .html__subtext_grey {
+        font-size: 10px;  
+    }
+
+    .html__text_white-footer {
+        font-size: 15px;
+    }
+
+    .html__main-text_white {
+        font-size: 20px;
+    }
+
+    .html__subtext_white {
+        font-size: 15px;
+    }
+    .html__main-text_white  {
+        font-size: 15px;
+    }
+
+    .html__title_black {
+        font-size: 20px;
+    }
+  }

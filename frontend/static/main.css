@@ -37,10 +37,10 @@ ul {
 
 @media screen and (max-width: 992px) {
   .html_margin {
-    margin: 0 75px;
+    margin: 0 55px;
   }
 
-.html_padding {
-    padding: 0 75px;
+  .html_padding {
+    padding: 0 55px;
   }
 }

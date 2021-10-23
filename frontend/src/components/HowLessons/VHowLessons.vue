@@ -88,7 +88,45 @@
     width: 21px;
   }
   .block-how-lessons__text {
-  margin: 15px;
+    margin: 15px;
+  }
 }
+
+@media screen and (max-width: 750px) {
+  .block-how-lessons {
+    height: 480px;
+  }
+  .block-how-lessons__border {
+    width: 482px;
+    height: 354px;
+  }
+  .block-how-lessons__title {
+    padding-top: 26px;
+  }
+  .block-how-lessons__coutainer {
+    margin-top: 37px;
+  }
+  .block-how-lessons__text {
+    margin: 7px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .block-how-lessons {
+    height: 570px;
+  }
+  .block-how-lessons__border {
+    width: 308px;
+    height: 437px;
+  }
+  .block-how-lessons__title {
+    padding-top: 13px;
+  }
+  .block-how-lessons__coutainer {
+    margin-top: 25px;
+  }
+  .block-how-lessons__text {
+    margin: 18px;
+  }
 }
 </style>

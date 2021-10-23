@@ -41,6 +41,7 @@ block-footer__logo {
 .block-footer__img1 {
   position: absolute;
   left: 0;
+  top: -1px;
   width: 495px;
 }
 
@@ -63,7 +64,7 @@ block-footer__logo {
 
 .block-footer__logo {
   width: 209px;
-height: 36px;
+  height: 36px;
 }
 @media screen and (max-width: 1280px) {
   .block-footer__logo {
@@ -73,9 +74,66 @@ height: 36px;
 }
 
 @media screen and (max-width: 992px) {
+  .block-footer {
+    height: 384px;
+  }
+
   .block-footer__logo {
     width: 101px;
     height: 17px;
+  }
+
+  .block-footer__img1 {
+    height: 384px;
+  }
+  .block-footer__img2 {
+    width: 273px;
+    height: 289px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .block-footer {
+    height: 243px;
+  }
+
+  .block-footer__logo {
+    width: 90px;
+    height: 15px;
+  }
+
+  .block-footer__img1 {
+    width: 243.69px;
+    height: 256.4px;
+  }
+  .block-footer__img2 {
+    width: 174px;
+    height: 186.5px;
+  }
+  .block-footer__text {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .block-footer {
+    height: 550px;
+  }
+  .block-footer__coutainer {
+    flex-direction: column;
+  }
+  .block-footer__info {
+    margin: 0;
+    margin-bottom: 75px;
+  }
+  .block-footer__logo {
+    margin-bottom: 75px;
+  }
+  .block-footer__img1 {
+    width: 100%;
+  }
+  .block-footer__img2 {
+    width: 100%;
   }
 }
 </style>
