@@ -19,3 +19,28 @@ html {
 .html_padding {
     padding: 0 110px;
   }
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .html_margin {
+    margin: 0 105px;
+  }
+
+.html_padding {
+    padding: 0 105px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .html_margin {
+    margin: 0 75px;
+  }
+
+.html_padding {
+    padding: 0 75px;
+  }
+}

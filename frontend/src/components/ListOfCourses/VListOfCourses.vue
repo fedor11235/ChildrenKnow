@@ -5,21 +5,21 @@
     //- .list-of-courses__column1
     .list-of-courses__course.html__subtitle_white_medium
       span Звукорежессура
-    .list-of-courses__course.html__subtitle_white_medium  
+    .list-of-courses__course.html__subtitle_white_medium 
       span Дизайн
-    .list-of-courses__course.html__subtitle_white_medium  
+    .list-of-courses__course.html__subtitle_white_medium 
       span Программирование<br>на языке Scratch
-    .list-of-courses__course.html__subtitle_white_medium  
+    .list-of-courses__course.html__subtitle_white_medium 
       span Создание сайтов<br>Front-end разработка
 
     //- .list-of-courses__column2
-    .list-of-courses__course.html__subtitle_white_medium  
+    .list-of-courses__course.html__subtitle_white_medium 
       span Программирование<br>на языке Python
-    .list-of-courses__course.html__subtitle_white_medium  
+    .list-of-courses__course.html__subtitle_white_medium 
       span Графический дизайн
-    .list-of-courses__course.html__subtitle_white_medium  
+    .list-of-courses__course.html__subtitle_white_medium 
       span 3D-Моделирование
-    .list-of-courses__course.html__subtitle_white_medium  
+    .list-of-courses__course.html__subtitle_white_medium 
       span Разработка игр<br>в UNITY
 
     .list-of-courses__delimiter
@@ -56,7 +56,6 @@
   box-sizing: border-box;
 }
 
-
 .list-of-courses__course {
   display: flex;
   cursor: pointer;
@@ -67,11 +66,10 @@
   margin: auto;
 }
 
-
 .list-of-courses__delimiter {
   position: absolute;
   background-color: #5200ff;
-  left: 49%;
+  left: 50%;
   bottom: 0;
   width: 3px;
   height: 95%;
@@ -112,5 +110,55 @@
   position: absolute;
   width: 100%;
   bottom: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .list-of-courses__title {
+    margin-top: 41px;
+  }
+  .list-of-courses {
+    height: 800px;
+  }
+  .list-of-courses__coutainer {
+    width: 950px;
+    height: 563px;
+    margin: 54px 0 98px;
+  }
+  .list-of-courses__vertical-separation1 {
+    top: 140px;
+  }
+
+  .list-of-courses__vertical-separation2 {
+    top: 280px;
+  }
+
+  .list-of-courses__vertical-separation3 {
+    top: 420px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .list-of-courses__title {
+    margin-top: 12px;
+  }
+  .list-of-courses {
+    height: 650px;
+  }
+  .list-of-courses__coutainer {
+    width: 753px;
+    height: 420px;
+    margin: 49px 0 111px;
+  }
+  .list-of-courses__vertical-separation1 {
+    top: 105px;
+  }
+
+  .list-of-courses__vertical-separation2 {
+    top: 210px;
+  }
+
+  .list-of-courses__vertical-separation3 {
+    top: 315px;
+  }
 }
 </style>

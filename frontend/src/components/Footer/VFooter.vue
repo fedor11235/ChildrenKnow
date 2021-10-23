@@ -19,7 +19,6 @@
 </template>
 
 <style>
-
 .block-footer {
   position: relative;
   display: flex;
@@ -34,11 +33,9 @@
   z-index: 1;
 }
 
-img.block-footer__logo{
-
+block-footer__logo {
   width: 209px;
   height: 36px;
-
 }
 
 .block-footer__img1 {
@@ -56,12 +53,29 @@ img.block-footer__logo{
 
 .block-footer__info {
   margin: 0 20px;
-
 }
 
 .block-footer__text {
   list-style-type: none;
   margin: 20px 0;
   cursor: pointer;
+}
+
+.block-footer__logo {
+  width: 209px;
+height: 36px;
+}
+@media screen and (max-width: 1280px) {
+  .block-footer__logo {
+    width: 130px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .block-footer__logo {
+    width: 101px;
+    height: 17px;
+  }
 }
 </style>

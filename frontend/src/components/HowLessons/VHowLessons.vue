@@ -1,17 +1,17 @@
 <template lang="pug">
-.block-how-lessons#block-how-lessons
-  .block-how-lessons__title.html__title_white  Как проходят уроки
+#block-how-lessons.block-how-lessons
+  .block-how-lessons__title.html__title_white Как проходят уроки
   .block-how-lessons__coutainer
     .block-how-lessons__border
-      .block-how-lessons__text.html__subtitle_white_normal  Вспоминаем тему прошлого урока и проверяем<br> домашнее задание.
-      img(src="./block-how-lessons__arrow.png")
-      .block-how-lessons__text.html__subtitle_white_normal  Изучаем новую тему и решаем новые задачи<br> вместе с преподователем
-      img(src="./block-how-lessons__arrow.png")
+      .block-how-lessons__text.html__subtitle_white_normal Вспоминаем тему прошлого урока и проверяем<br> домашнее задание.
+      img.block-how-lessons__arrow(src="./block-how-lessons__arrow.png")
+      .block-how-lessons__text.html__subtitle_white_normal Изучаем новую тему и решаем новые задачи<br> вместе с преподователем
+      img.block-how-lessons__arrow(src="./block-how-lessons__arrow.png")
 
-      .block-how-lessons__text.html__subtitle_white_normal  Самостоятельное решение более сложных<br> задачи и отых ввиде игровых заданий
-      img(src="./block-how-lessons__arrow.png")
+      .block-how-lessons__text.html__subtitle_white_normal Самостоятельное решение более сложных<br> задачи и отых ввиде игровых заданий
+      img.block-how-lessons__arrow(src="./block-how-lessons__arrow.png")
 
-      .block-how-lessons__text.html__subtitle_white_normal  Преподаватель подводит итоги, повторяют<br> вместе с учениками пройденый материал и<br> готовятся к следующему уроку
+      .block-how-lessons__text.html__subtitle_white_normal Преподаватель подводит итоги, повторяют<br> вместе с учениками пройденый материал и<br> готовятся к следующему уроку
   img.block-how-lessons__img(src="./block-how-lessons__img.png")
 </template>
 
@@ -29,7 +29,7 @@
 
 .block-how-lessons__title {
   text-align: center;
-  padding: 31px 120px 0;
+  padding-top: 31px;
 }
 
 .block-how-lessons__coutainer {
@@ -45,12 +45,50 @@
   border: 3px solid #5200ff;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .block-how-lessons__img {
-  position:absolute;
+  position: absolute;
   height: 100%;
-  top:0;
+  top: 0;
   right: 0;
+}
+@media screen and (max-width: 1280px) {
+  .block-how-lessons {
+    height: 800px;
+  }
+  .block-how-lessons__border {
+    width: 886px;
+    height: 600px;
+  }
+  .block-how-lessons__title {
+    padding-top: 42px;
+  }
+  .block-how-lessons__coutainer {
+    margin-top: 59px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .block-how-lessons {
+    height: 650px;
+  }
+  .block-how-lessons__border {
+    width: 753px;
+    height: 476px;
+  }
+  .block-how-lessons__title {
+    padding-top: 13px;
+  }
+  .block-how-lessons__coutainer {
+    margin-top: 50px;
+  }
+  .block-how-lessons__arrow {
+    width: 21px;
+  }
+  .block-how-lessons__text {
+  margin: 15px;
+}
 }
 </style>

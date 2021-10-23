@@ -18,7 +18,7 @@
             placeholder="Ваш email"
           )
 
-          button.contact-board__button.html__text_white Записаться
+          button.contact-board__button.html__text_white-footer Записаться
   span.contact-board__under-the-text.html__subtext_black Заявка
     span.contact-board_color-grey.html__subtext_grey → Звонок менеджера → Пробный урок
 </template>
@@ -48,7 +48,7 @@
 }
 
 .contact-board__text {
-  margin-top:48px;
+  margin-top: 48px;
 }
 
 .contact-board_centered-horizontally {
@@ -90,8 +90,6 @@
   color: #a37af9;
 }
 
-
-
 .contact-board__input:focus {
   font: normal 24px Roboto;
   color: #a37af9;
@@ -99,21 +97,20 @@
 }
 
 .contact-board__input:focus::-webkit-input-placeholder {
-  color: transparent
+  color: transparent;
 }
 
 .contact-board__input:focus::-moz-placeholder {
-  color: transparent
+  color: transparent;
 }
 
 .contact-board__input:focus:-moz-placeholder {
-  color: transparent
+  color: transparent;
 }
 
 .contact-board__input:focus:-ms-input-placeholder {
-  color: transparent
+  color: transparent;
 }
-
 
 .contact-board__button {
   width: 263px;
@@ -135,22 +132,68 @@
   left: 80px;
 }
 
-
 .contact-board_margin-bottom {
   margin-bottom: 36px;
 }
 
 @media screen and (max-width: 1280px) {
   .contact-board__input {
-  font-size: 18px;
-}
+    font-size: 18px;
+    width: 325px;
+    height: 58px;
+  }
 
-.contact-board__input::placeholder {
-  font-size: 18px;
+  .contact-board__input::placeholder {
+    font-size: 18px;
+  }
+  .contact-board__input:focus {
+    font-size: 18px;
+    padding-left: 24px;
+  }
+  .contact-board {
+    width: 955px;
+    height: 682px;
+  }
+  .contact-board__coutainer {
+    width: 883px;
+    height: 607px;
+    margin: 36px;
+  }
+  .contact-board__button {
+    width: 207px;
+    height: 51px;
+  }
 }
-.contact-board__input:focus {
-  font-size: 18px;
-  padding-left: 27px;
-}
+@media screen and (max-width: 992px) {
+  .contact-board__input {
+    width: 251px;
+    height: 46px;
+  }
+
+  .contact-board__input::placeholder {
+    font-size: 18px;
+  }
+  .contact-board__input:focus {
+    font-size: 18px;
+    padding-left: 19px;
+  }
+  .contact-board {
+    width: 735px;
+    height: 549px;
+  }
+  .contact-board__coutainer {
+    width: 681px;
+    height: 488px;
+    margin: 29px;
+  }
+  .contact-board__button {
+    width: 178px;
+    height: 45px;
+  }
+
+  .contact-board__under-the-text {
+    bottom: 70px;
+    left: 62px;
+  }
 }
 </style>

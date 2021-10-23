@@ -45,7 +45,12 @@
     color: #000;
 }
 
-.html__text_white {
+.html__text_white-footer {
+    font: normal 28px Roboto;
+    color: #fff;
+}
+
+.html__text_white-face {
     font: normal 28px Roboto;
     color: #fff;
 }
@@ -53,6 +58,11 @@
 .html__subtext_white {
     font: normal 24px Roboto;
     color: #fff;
+}
+
+.html__menu_black {
+    font: normal 24px Roboto;
+    color: #000;
 }
 
 .html__subtext_black {
@@ -102,15 +112,23 @@
         font-size:28px;
     }
     
-    .html__text_white {
-        font-size:24px;
+    .html__text_white-footer {
+        font-size:20px;
     }
     
+    .html__text_white-face {
+        font-size:24px;
+    }
+
     .html__subtext_white {
         font-size:20px;
     }
     
     .html__subtext_black {
+        font-size:18px;
+    }
+
+    .html__menu_black {
         font-size:18px;
     }
     
@@ -119,56 +137,58 @@
     }
   }
 
-  @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
+
+
+    .html__menu_black {
+        font-size: 15px;
+    }
     .html__main-title_black {
-        font-size:55px;
+        font-size: 55px;
     }
-    
-    .html__title_white {
-        font-size:55px;
-    }
-    
-    .html__title_black {
-        font-size:55px;
-    }
-    
-    .html__title_blue {
-        font-size:55px;
-    }
-    
-    .html__subtitle_white_normal {
-        font-size:24px;
-    }
-    
-    .html__subtitle_white_medium {
-        font-size:27px;
-    }
-    
+
     .html__main-text_black {
-        font-size:22px;
+        font-size: 22px;
     }
-    
-    .html__main-text_white {
-        font-size:24px;
+
+    .html__title_white {
+        font-size: 55px;
     }
-    
-    .html__text_black {
-        font-size:28px;
+
+    .html__subtitle_white_medium {
+        font-size: 22px;
     }
-    
-    .html__text_white {
-        font-size:24px;
+
+    .html__subtitle_white_normal {
+        font-size: 22px;
+      }
+
+    .html__title_black {
+        font-size: 30px;
+      }
+
+    .html__title_blue {
+        font-size: 30px;    
     }
-    
-    .html__subtext_white {
-        font-size:20px;
+
+    .html__main-text_black {
+        font-size: 22px;
     }
-    
+
     .html__subtext_black {
-        font-size:18px;
+        font-size: 15px;
     }
-    
+ 
     .html__subtext_grey {
-        font-size:18px;
+        font-size: 15px;
     }
+
+    .html__main-text_white {
+        font-size: 22px;
+    }
+
+    .html__subtext_white {
+        font-size: 18px;
+    }
+  
   }

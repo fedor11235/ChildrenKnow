@@ -41,4 +41,32 @@ export default {
 .contact-board_margin-bottom {
   margin-bottom: 36px;
 }
+
+@media screen and (max-width: 1280px) {
+  .block-recording {
+    height: 800px;
+  }
+  .block-recording__img1{
+    width: 543.91px;
+    height: 591.31px;
+  }
+  .block-recording__img2{
+    width: 670.73px;
+    height: 616.02px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .block-recording {
+    height: 650px;
+  }
+  .block-recording__img1{
+    width: 437.29px;
+    height: 455.42px;
+  }
+  .block-recording__img2{
+    width: 525.22px;
+    height: 499.92px;
+  }
+}
 </style>
