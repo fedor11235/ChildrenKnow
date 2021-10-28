@@ -2,16 +2,17 @@
 #block-recording.block-recording
   contact-board
 
-  img.block-recording__img1(src="./block-recording__img1.png")
-  img.block-recording__img2(src="./block-recording__img2.png")
+  img.block-recording__img1(src="@/assets/img/block-recording__img1.png")
+  img.block-recording__img2(src="@/assets/img/block-recording__img2.png")
 </template>
 
 <script>
-import VContactBoard from "../ContactBoard/VContactBoard";
+import ContactBoard from "./ContactBoard";
 
 export default {
+  name:'block-recording',
   components: {
-    "contact-board": VContactBoard,
+    "contact-board": ContactBoard,
   },
 };
 </script>

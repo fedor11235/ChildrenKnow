@@ -5,6 +5,7 @@ const template_path = '../templates/index.html'
 
 module.exports = {
   runtimeCompiler: true,
+  lintOnSave: false,
 
   // Paths
   // Рабочая директория сборки 

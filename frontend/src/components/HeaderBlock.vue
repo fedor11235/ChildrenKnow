@@ -4,16 +4,22 @@
 
   .header-block__container.html_margin
     .header-block__logo
-      img(src="./header-block__logo.png")
+      img(src="@/assets/img/header-block__logo.png")
     .header-block__menu
       a.header-block__navlink.html__menu_black(href="http://localhost:8080") Блог
       a.header-block__navlink.html__menu_black(href="/#list-of-courses__title") Курсы
       a.header-block__navlink.html__menu_black(href="/#block-about-courses") Плюсы курсов
       a.header-block__navlink.html__menu_black(href="/#block-how-lessons") Как проходят наши курсы
       a.header-block__navlink.html__menu_black(href="/#block-recording") Запись
-    img.header-block__burger(src="./header-block__burger.png")
+    img.header-block__burger(src="@/assets/img/header-block__burger.png")
   hr.header-block__delimiter
 </template>
+
+<script>
+export default {
+  name: "header-block",
+};
+</script>
 
 <style>
 .header-block__burger {
@@ -36,7 +42,7 @@
   align-items: center;
   position: absolute;
   left: 0;
-  top:23px;
+  top: 23px;
 }
 
 .header-block__logo-text {
@@ -72,9 +78,8 @@
 }
 
 @media screen and (max-width: 1280px) {
-
   .header-block__logo img {
-    top:20px;
+    top: 20px;
   }
 
   .header-block__logo img {
@@ -97,7 +102,6 @@
 }
 
 @media screen and (max-width: 992px) {
-
   .header-block__logo img {
     width: 110px;
     height: 19px;
@@ -128,11 +132,10 @@
     width: 64px;
     height: 11px;
   }
-  
 
-  .header-block__logo{
+  .header-block__logo {
     top: 7px;
-    bottom:0;
+    bottom: 0;
   }
 
   .header-block__container {

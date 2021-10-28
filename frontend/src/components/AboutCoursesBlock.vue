@@ -18,11 +18,17 @@
       li.block-about-courses__text.html__main-text_white 
         span Экономим время в дороге
 
-  img.block-about-courses__img1(src="./block-about-courses__img1.png")
-  img.block-about-courses__img2(src="./block-about-courses__img2.png")
+  img.block-about-courses__img1(src="@/assets/img/block-about-courses__img1.png")
+  img.block-about-courses__img2(src="@/assets/img/block-about-courses__img2.png")
 
 </template>
 
+<script>
+
+export default {
+  name:'block-about-courses',
+};
+</script>
 
 <style>
 .block-about-courses {
@@ -155,7 +161,7 @@
 @media screen and (max-width: 400px) {
   .block-about-courses {
     height: 505px;
-    background-image: url(block-about-courses__img3.png);
+    background-image: url(../assets/img/block-about-courses__img3.png);
   }
   .block-about-courses__title {
     position:initial;

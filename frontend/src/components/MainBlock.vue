@@ -4,13 +4,14 @@
   list-of-courses
 </template>
 <script>
-import VListOfCourses from "../ListOfCourses/VListOfCourses";
-import VFace from "../Face/VFace";
+import ListOfCourses from "./ListOfCourses";
+import Face from "./Face";
 
 export default {
+  name:'main-block',
   components: {
-    "list-of-courses": VListOfCourses,
-    "face": VFace
+    "face": Face,
+    "list-of-courses": ListOfCourses,
   },
 };
 </script>

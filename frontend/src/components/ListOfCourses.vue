@@ -31,9 +31,15 @@
     .list-of-courses__vertical-separation5
     .list-of-courses__vertical-separation6
     .list-of-courses__vertical-separation7
-  img.list-of-courses__img(src="./list-of-courses__img.png")
+  img.list-of-courses__img(src="@/assets/img/list-of-courses__img.png")
 </template>
 
+<script>
+
+export default {
+  name:'list-of-courses',
+};
+</script>
 
 <style>
 .list-of-courses {

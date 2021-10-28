@@ -4,16 +4,23 @@
   .block-how-lessons__coutainer
     .block-how-lessons__border
       .block-how-lessons__text.html__subtitle_white_normal Вспоминаем тему прошлого урока и проверяем<br class="space"> домашнее задание.
-      img.block-how-lessons__arrow(src="./block-how-lessons__arrow.png")
+      img.block-how-lessons__arrow(src="@/assets/img/block-how-lessons__arrow.png")
       .block-how-lessons__text.html__subtitle_white_normal Изучаем новую тему и решаем новые задачи<br class="space"> вместе с преподователем
-      img.block-how-lessons__arrow(src="./block-how-lessons__arrow.png")
+      img.block-how-lessons__arrow(src="@/assets/img/block-how-lessons__arrow.png")
 
       .block-how-lessons__text.html__subtitle_white_normal Самостоятельное решение более сложных<br class="space"> задачи и отых ввиде игровых заданий
-      img.block-how-lessons__arrow(src="./block-how-lessons__arrow.png")
+      img.block-how-lessons__arrow(src="@/assets/img/block-how-lessons__arrow.png")
 
       .block-how-lessons__text.html__subtitle_white_normal Преподаватель подводит итоги, повторяют<br class="space"> вместе с учениками пройденый материал и<br> готовятся к следующему уроку
-  img.block-how-lessons__img(src="./block-how-lessons__img.png")
+  img.block-how-lessons__img(src="@/assets/img/block-how-lessons__img.png")
 </template>
+
+<script>
+
+export default {
+  name:'block-how-lessons',
+};
+</script>
 
 <style>
 .block-how-lessons {

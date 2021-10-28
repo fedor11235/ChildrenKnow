@@ -1,31 +1,18 @@
 <template lang="pug">
 #app
-  header-block
-  main-block
-  about-courses
-  how-lessons
-  recording
-  footer-block
+  main-page
+
 </template>
 <script>
-import VMainBlock from "./components/MainBlock/VMainBlock";
-import VAboutCourses from "./components/AboutCourses/VAboutCourses";
-import VHowLessons from "./components/HowLessons/VHowLessons";
-import VRecording from "./components/Recording/VRecording";
-import VFooter from "./components/Footer/VFooter";
-import VHeader from "./components/Header/VHeader";
+import MainPage from "./pages/MainPage";
+
 import '@/assets/css/fonts.css';
 import '@/assets/css/main.css';
 
 export default {
   name: "app",
   components: {
-    "main-block": VMainBlock,
-    "about-courses": VAboutCourses,
-    "how-lessons": VHowLessons,
-    recording: VRecording,
-    "footer-block": VFooter,
-    "header-block": VHeader,
+    "main-page": MainPage,
   },
 };
 </script>

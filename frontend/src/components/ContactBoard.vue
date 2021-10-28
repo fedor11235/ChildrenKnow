@@ -23,6 +23,12 @@
     span.contact-board_color-grey.html__subtext_grey → Звонок менеджера → Пробный урок
 </template>
 
+<script>
+
+export default {
+  name:'contact-board',
+};
+</script>
 
 <style>
 .contact-board {
