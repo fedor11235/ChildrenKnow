@@ -40,7 +40,7 @@ const actions = {
     })
   },
   deleteNote ({ commit }, note) {
-    Note.delete(note).then(response => {
+    Note.delete(note).then(() => {
       commit(REMOVE_NOTE, note)
     })
   },

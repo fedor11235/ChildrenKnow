@@ -14,7 +14,7 @@
           form
           input.contact-board__input(placeholder="Ваше имя")
           input.contact-board__input(placeholder="Ваш телефон")
-          input.contact-board__input.contact-board_margin-bottom(
+          input.contact-board__input(
             placeholder="Ваш email"
           )
 
@@ -248,8 +248,12 @@
   .contact-board__input {
     width: 180px;
     height: 33px;
-    margin-bottom: 3px;
+    margin-bottom: 7px;
   }
+
+  .contact-board_margin-bottom {
+    margin-bottom: 3px;
+}
 
   .contact-board__input::placeholder {
     font-size: 12px;
@@ -275,15 +279,19 @@
 
   .contact-board__info {
     margin: auto;
+    width: 80%;
     margin-top: 5px;
-  
+    text-align: center;
   }
 
   .contact-board__form {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    margin-left:auto;
+    margin-right:auto;
     align-items: center;
+    width: 180px;
   }
   .contact-board__button {
     width: 148px;

@@ -150,7 +150,7 @@
     height: 650px;
   }
   .list-of-courses__coutainer {
-    width: 753px;
+    width: 720px;
     height: 420px;
     margin: 49px 0 111px;
   }
@@ -196,7 +196,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .list-of-courses__title {
     margin-top: 13px;
   }

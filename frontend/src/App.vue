@@ -14,6 +14,8 @@ import VHowLessons from "./components/HowLessons/VHowLessons";
 import VRecording from "./components/Recording/VRecording";
 import VFooter from "./components/Footer/VFooter";
 import VHeader from "./components/Header/VHeader";
+import '@/assets/css/fonts.css';
+import '@/assets/css/main.css';
 
 export default {
   name: "app",
@@ -30,6 +32,7 @@ export default {
 <style>
 @import url(https://fonts.googleapis.com/css?family=Eczar);
 @import url(https://fonts.googleapis.com/css?family=Work+Sans);
+
 body {
   font-family: "Work Sans", "Segoe UI", "Helvetica Neue", sans-serif;
 }

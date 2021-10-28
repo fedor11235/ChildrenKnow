@@ -19,6 +19,8 @@
 
 .face__info {
   position: absolute;
+  width: 48%;
+  height: 597px;
   left: 110px;
   z-index: 1;
 }
@@ -58,8 +60,8 @@
 
 @media screen and (max-width: 1280px) {
   .face__img {
-    width: 601px;
-    height: 597px;
+    width: 430px;
+    height: 427px;
     right: 105px;
   }
 
@@ -70,8 +72,6 @@
 
 @media screen and (max-width: 992px) {
   .face__img {
-    width: 430px;
-    height: 427px;
     right: 55px;
   }
   .face__button {
@@ -124,9 +124,6 @@
     display: none;
   }
 
-  br {
-    display: none;
-  }
   .face__button {
     width: 259px;
     height: 57px;
@@ -137,6 +134,7 @@
 
   .face__info {
     position:initial;
+    width: 100%;
   }
   .face__header {
     margin-bottom: 94px;

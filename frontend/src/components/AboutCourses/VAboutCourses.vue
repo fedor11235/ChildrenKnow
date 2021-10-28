@@ -154,7 +154,7 @@
 
 @media screen and (max-width: 400px) {
   .block-about-courses {
-    height: 510px;
+    height: 505px;
     background-image: url(block-about-courses__img3.png);
   }
   .block-about-courses__title {

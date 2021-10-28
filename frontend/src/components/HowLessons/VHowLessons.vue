@@ -3,15 +3,15 @@
   .block-how-lessons__title.html__title_white Как проходят уроки
   .block-how-lessons__coutainer
     .block-how-lessons__border
-      .block-how-lessons__text.html__subtitle_white_normal Вспоминаем тему прошлого урока и проверяем<br> домашнее задание.
+      .block-how-lessons__text.html__subtitle_white_normal Вспоминаем тему прошлого урока и проверяем<br class="space"> домашнее задание.
       img.block-how-lessons__arrow(src="./block-how-lessons__arrow.png")
-      .block-how-lessons__text.html__subtitle_white_normal Изучаем новую тему и решаем новые задачи<br> вместе с преподователем
-      img.block-how-lessons__arrow(src="./block-how-lessons__arrow.png")
-
-      .block-how-lessons__text.html__subtitle_white_normal Самостоятельное решение более сложных<br> задачи и отых ввиде игровых заданий
+      .block-how-lessons__text.html__subtitle_white_normal Изучаем новую тему и решаем новые задачи<br class="space"> вместе с преподователем
       img.block-how-lessons__arrow(src="./block-how-lessons__arrow.png")
 
-      .block-how-lessons__text.html__subtitle_white_normal Преподаватель подводит итоги, повторяют<br> вместе с учениками пройденый материал и<br> готовятся к следующему уроку
+      .block-how-lessons__text.html__subtitle_white_normal Самостоятельное решение более сложных<br class="space"> задачи и отых ввиде игровых заданий
+      img.block-how-lessons__arrow(src="./block-how-lessons__arrow.png")
+
+      .block-how-lessons__text.html__subtitle_white_normal Преподаватель подводит итоги, повторяют<br class="space"> вместе с учениками пройденый материал и<br> готовятся к следующему уроку
   img.block-how-lessons__img(src="./block-how-lessons__img.png")
 </template>
 
@@ -111,7 +111,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 520px) {
   .block-how-lessons {
     height: 570px;
   }
@@ -127,6 +127,9 @@
   }
   .block-how-lessons__text {
     margin: 18px;
+  }
+  .space {
+    display: none;
   }
 }
 </style>
