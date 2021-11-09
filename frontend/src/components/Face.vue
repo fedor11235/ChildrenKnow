@@ -17,134 +17,109 @@ export default {
 };
 </script>
 
-<style>
-.face {
-  position: relative;
-  padding-top: 77px;
-  height: 734px;
-}
+<style lang="sass">
+.face
+  position: relative
+  padding-top: 77px
+  height: 734px
 
-.face__info {
-  position: absolute;
-  width: 35%;
-  height: 597px;
-  left: 110px;
-  z-index: 1;
-}
+.face__info
+  position: absolute
+  width: 35%
+  height: 597px
+  left: 110px
+  z-index: 1
 
-.face__img {
-  position: absolute;
-  right: 110px;
-}
+.face__img
+  position: absolute
+  right: 110px
 
-.face__header {
-  margin-bottom: 11px;
-}
+.face__header
+  margin-bottom: 11px
 
-.face__content {
-  margin-bottom: 50px;
-}
+.face__content
+  margin-bottom: 50px
 
-.face__button {
-  width: 295.54px;
-  height: 63.01px;
-  background: #014dd6;
-  border-radius: 13px;
-  border: none;
-  cursor: pointer;
+.face__button
+  width: 295.54px
+  height: 63.01px
+  background: #014dd6
+  border-radius: 13px
+  border: none
+  cursor: pointer
+  margin-right: 20px
 
-  margin-right: 20px;
-}
+  &:active
+    background: #5200ff
 
-.face__button:active {
-  background: #5200ff;
-}
+.face__img
+  width: 609px
+  height: 605px
 
-.face__img {
-  width: 609px;
-  height: 605px;
-}
+@media screen and (max-width: 1280px)
+  .face__img
+    width: 430px
+    height: 427px
+    right: 105px
 
-@media screen and (max-width: 1280px) {
-  .face__img {
-    width: 430px;
-    height: 427px;
-    right: 105px;
-  }
+  .face__info
+    left: 105px
 
-  .face__info {
-    left: 105px;
-  }
-}
+@media screen and (max-width: 992px)
+  .face__img
+    right: 55px
 
-@media screen and (max-width: 992px) {
-  .face__img {
-    right: 55px;
-  }
-  .face__button {
-    width: 318px;
-    height: 67px;
-  }
-  .face__content {
-    margin-bottom: 79px;
-  }
+  .face__button
+    width: 318px
+    height: 67px
 
-  .face__info {
-    left: 55px;
-  }
-}
+  .face__content
+    margin-bottom: 79px
 
-@media screen and (max-width: 750px) {
-  .face {
-    height: 480px;
-  }
+  .face__info
+    left: 55px
 
-  .face__img {
-    width: 237px;
-    height: 235px;
-    right: 55px;
-  }
-  .face__button {
-    width: 207px;
-    height: 46px;
-  }
+@media screen and (max-width: 750px)
+  .face
+    height: 480px
 
+  .face__img
+    width: 237px
+    height: 235px
+    right: 55px
 
-  .face__info {
-    left: 55px;
-  }
-  .face__header {
-    margin-bottom: 27px;
-  }
-  .face__content {
-    margin-bottom: 54px;
-  }
-}
+  .face__button
+    width: 207px
+    height: 46px
 
-@media screen and (max-width: 400px) {
-  .face {
-    margin: 0 47px;
-    padding-top:67px;
-  }
-  
-  .face__img {
-    display: none;
-  }
+  .face__info
+    left: 55px
 
-  .face__button {
-    width: 259px;
-    height: 57px;
-  }
-  .face__content {
-    margin-bottom: 75px;
-  }
+  .face__header
+    margin-bottom: 27px
 
-  .face__info {
-    position:initial;
-    width: 100%;
-  }
-  .face__header {
-    margin-bottom: 94px;
-  }
-}
+  .face__content
+    margin-bottom: 54px
+
+@media screen and (max-width: 400px)
+  .face
+    margin: 0 47px
+    padding-top: 67px
+
+  .face__img
+    display: none
+
+  .face__button
+    width: 259px
+    height: 57px
+
+  .face__content
+    margin-bottom: 75px
+
+  .face__info
+    position: initial
+    width: 100%
+
+  .face__header
+    margin-bottom: 94px
 </style>

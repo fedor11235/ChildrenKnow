@@ -18,13 +18,7 @@ export default {
 
 };
 </script>
-<style>
-.main-block {
-  background: linear-gradient(
-    358.17deg,
-    #0150d7 1.49%,
-    #0198f0 42.16%,
-    rgba(196, 196, 196, 0) 98.38%
-  );
-}
+<style lang="sass">
+.main-block
+  background: linear-gradient(358.17deg, #0150d7 1.49%, #0198f0 42.16%, rgba(196, 196, 196, 0) 98.38%)
 </style>

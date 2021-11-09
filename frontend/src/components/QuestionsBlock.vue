@@ -1,15 +1,12 @@
-<template >
-<div class="quetions-block">
-  <div class="quetions-block__title html__title_white" id="quetions-block__title">Кому подойдёт этот курс</div>
-  <div class="quetions-block__coutainer">
-    <div class="quetions-block__course" v-for="item in quetions" :key="item.title">
-      <div class="quetions-block__heading html__subtitle_white_normal">{{item.title}}</div>
-      <div class="quetions-block__text html__main-text_white">{{item.text}}</div>
-      <div class="quetions-block__horizontal-separation"></div>
-    </div>
-    
-  </div>
-</div>
+<template lang="pug">
+.quetions-block
+  #quetions-block__title.quetions-block__title.html__title_white Кому подойдёт этот курс
+  .quetions-block__coutainer
+    .quetions-block__course(v-for='item in quetions' :key='item.title')
+      .quetions-block__heading.html__subtitle_white_normal {{item.title}}
+      .quetions-block__text.html__main-text_white {{item.text}}
+      .quetions-block__horizontal-separation
+
 </template>
 
 <script>
@@ -27,128 +24,101 @@ export default {
 };
 </script>
 
-<style>
-.quetions-block {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-}
+<style lang="sass">
+$var1: #5200ff;
 
-.quetions-block__text {
-    text-align:justify;
-    padding: 0 120px;
-}
+.quetions-block 
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	&__text 
+		text-align: justify;
+		padding: 0 120px;
+	
+	&__heading 
+		text-align: left;
+		padding: 0 105px;
+		margin: 30px 0;
+	
+	&__title 
+		margin-top: 31px;
+	
+	&__coutainer 
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 1100px;
+		margin: 61px 0 81px;
+		border: 3px solid $var1;
+		box-sizing: border-box;
+	
+	&__course 
+		display: flex;
+		flex-direction: column;
+	
+	&__delimiter 
+		position: absolute;
+		background-color: $var1;
+		left: 50%;
+		bottom: 0;
+		width: 3px;
+		height: 95%;
+	
+	&__horizontal-separation 
+		background-color: $var1;
+		margin-top: 30px;
+		width: 84%;
+		left: 8%;
+		height: 1px;
+		&1 
+			display: none;
+		
+	
+	&__img 
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+	
+	&__coutainer 
+		width: 950px;
+		margin: 54px 0 98px;
+	
+	&__coutainer 
+		width: 720px;
+		margin: 49px 0 111px;
+	
+	&__coutainer 
+		width: 459px;
+		margin: 37px 0 62px;
+	
+	&__text 
+		padding: 0 60px;
+	
+	&__heading 
+		padding: 0 50px;
+		margin: 30px 0;
+	
+	&__delimiter 
+		display: none;
+	
+	&__horizontal-separation 
+		top: 81px;
+	
+	&__coutainer 
+		width: 307px;
+		margin: 25px 0 26px;
+    
+@media screen and (max-width: 1280px) 
+	margin-top: 41px;
 
-.quetions-block__heading {
-    text-align: left;
-    padding: 0 105px;
-    margin:30px 0;
-}
+@media screen and (max-width: 992px) 
+	margin-top: 12px;
 
-.quetions-block__title {
-  margin-top: 31px;
-}
+@media screen and (max-width: 750px) 
+	margin-top: 26px;
 
-.quetions-block__coutainer {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 1100px;
-  margin: 61px 0 81px;
-  border: 3px solid #5200ff;
-  box-sizing: border-box;
-}
+@media screen and (max-width: 500px) 
+	margin-top: 13px;
 
-.quetions-block__course {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.quetions-block__delimiter {
-  position: absolute;
-  background-color: #5200ff;
-  left: 50%;
-  bottom: 0;
-  width: 3px;
-  height: 95%;
-}
-
-.quetions-block__horizontal-separation {
-  background-color: #5200ff;
-  margin-top:30px;
-  width: 84%;
-  left: 8%;
-  height: 1px;
-}
-
-.quetions-block__img {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
-@media screen and (max-width: 1280px) {
-  .quetions-block__title {
-    margin-top: 41px;
-  }
-  .quetions-block__coutainer {
-    width: 950px;
-    margin: 54px 0 98px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .quetions-block__title {
-    margin-top: 12px;
-  }
-  .quetions-block__coutainer {
-    width: 720px;
-    margin: 49px 0 111px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .quetions-block__title {
-    margin-top: 26px;
-  }
-  .quetions-block__coutainer {
-    width: 459px;
-    margin: 37px 0 62px;
-  }
-
-    .quetions-block__text {
-
-    padding: 0 60px;
-}
-
-.quetions-block__heading {
-    padding: 0 50px;
-    margin:30px 0;
-}
-
-
-  .quetions-block__horizontal-separation1 {
-    display: none;
-  }
-
-  .quetions-block__delimiter {
-    display: none;
-  }
-
-  .quetions-block__horizontal-separation {
-    top: 81px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .quetions-block__title {
-    margin-top: 13px;
-  }
-  .quetions-block__coutainer {
-    width: 307px;
-    margin: 25px 0 26px;
-  }
-}
 </style>
