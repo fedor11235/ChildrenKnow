@@ -1,18 +1,21 @@
-<template lang="pug">
-.main-block
-  face
-  list-of-courses
+<template lang='pug'>
+  html
+    head
+    body
+      .main-block
+        face(:title='title' :text='text')
+        component(:is='InfoBlock' :block1='block1' :block2='block2')
 </template>
 <script>
-import ListOfCourses from "./ListOfCourses";
 import Face from "./Face";
 
 export default {
-  name:'main-block',
+  name: "main-block",
+  props: ["title", "text", "InfoBlock", 'block1', 'block2'],
   components: {
-    "face": Face,
-    "list-of-courses": ListOfCourses,
+    'face': Face,
   },
+
 };
 </script>
 <style>

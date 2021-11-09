@@ -1,8 +1,8 @@
 <template lang="pug">
 .main-page
   header-block
-  front-block
-  about-courses-block
+  front-block(:title="main.title", :text="main.text", :InfoBlock="ListOfCourses")
+  about-courses-block(:title="aboutCourses.title", :info="aboutCourses.info")
   how-lessons-block
   recording-block
   footer-block
@@ -14,6 +14,7 @@ import HowLessonsBlock from "@/components/HowLessonsBlock";
 import AboutCoursesBlock from "@/components/AboutCoursesBlock";
 import RecordingBlock from "@/components/RecordingBlock";
 import FooterBlock from "@/components/FooterBlock";
+import ListOfCourses from "@/components/ListOfCourses";
 
 export default {
   name:'main-block',
@@ -23,7 +24,24 @@ export default {
     "how-lessons-block": HowLessonsBlock,
     "about-courses-block": AboutCoursesBlock,
     "recording-block": RecordingBlock,
-    "footer-block": FooterBlock
+    "footer-block": FooterBlock,
+    ListOfCourses
+  },
+    data() {
+    return { 
+      ListOfCourses,
+      main:{title: 'Изучи будующую профессию с энтузиазмом', text: 'Обучаем детей профессям будующего, индивитульные онлайн-занятия'},
+      aboutCourses:{title: 'Плюсы наших курсов',info: 
+                                                    [{text: 'Показываем, как с пользой проводить время за компьютером'},
+                                                    {text: 'Подберем курс по вашим интересам или выберет готовыую программу'},
+                                                    {text: 'Ребенок найдет новымх друзей по увлечениям'},
+                                                    {text: 'Индивидуальный темп обучения'},
+                                                    {text: 'Занимайтесь когда вам удобно'},
+                                                    {text: 'Дети учатся с удовольствием'},
+                                                    {text: 'Экономим время в дороге'},
+                                                    ]},
+      
+    };
   },
 };
 </script>

@@ -1,8 +1,8 @@
 <template lang="pug">
 .face
   .face__info
-    .face__header.html__main-title_black   Изучи <br>будующую <br>профессию с <br>интузиазмом
-    .face__content.html__main-text_black   Обучаем детей профессям <br> будующего,<br>индивитульные онлайн-занятия
+    .face__header.html__main-title_black   {{title}}
+    .face__content.html__main-text_black   {{text}}
     button.face__button.html__text_white-face(
       onclick="location.href='#block-recording'"
     ) Пробный урок
@@ -13,19 +13,20 @@
 <script>
 export default {
   name:'face',
+  props: ['title', 'text'],
 };
 </script>
 
 <style>
 .face {
   position: relative;
-  margin-top: 77px;
+  padding-top: 77px;
   height: 734px;
 }
 
 .face__info {
   position: absolute;
-  width: 48%;
+  width: 35%;
   height: 597px;
   left: 110px;
   z-index: 1;
@@ -123,7 +124,7 @@ export default {
 @media screen and (max-width: 400px) {
   .face {
     margin: 0 47px;
-    margin-top:67px;
+    padding-top:67px;
   }
   
   .face__img {

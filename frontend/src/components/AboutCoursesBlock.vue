@@ -1,22 +1,10 @@
 <template lang="pug">
 #block-about-courses.block-about-courses.padding-html
-  .block-about-courses__title.html__title_white Плюсы наших курсов
+  .block-about-courses__title.html__title_white {{title}}
   .block-about-courses__coutainer
     ul
-      li.block-about-courses__text.html__main-text_white 
-        span Показываем, как с пользой <br> проводить время за компьютером
-      li.block-about-courses__text.html__main-text_white 
-        span Подберем курс по вашим <br> интересам или выберет готовую <br> программу
-      li.block-about-courses__text.html__main-text_white 
-        span Ребенок найдет новымх друзей по <br> увлечениям
-      li.block-about-courses__text.html__main-text_white 
-        span Индивидуальный темп обучения
-      li.block-about-courses__text.html__main-text_white 
-        span Занимайтесь когда вам удобно
-      li.block-about-courses__text.html__main-text_white 
-        span Дети учатся с удовольствием
-      li.block-about-courses__text.html__main-text_white 
-        span Экономим время в дороге
+      li(v-for='item in info' :key='item.text' class = 'block-about-courses__text html__main-text_white') 
+        span {{item.text}}
 
   img.block-about-courses__img1(src="@/assets/img/block-about-courses__img1.png")
   img.block-about-courses__img2(src="@/assets/img/block-about-courses__img2.png")
@@ -27,6 +15,7 @@
 
 export default {
   name:'block-about-courses',
+  props:['title', 'info']
 };
 </script>
 
@@ -46,7 +35,8 @@ export default {
 
 .block-about-courses__coutainer {
   position: absolute;
-  top: 131px;
+  width: 50%;
+  top: 200px;
   right: 110px;
   z-index: 1;
 }
@@ -89,7 +79,7 @@ export default {
     left: 105px;
   }
   .block-about-courses__coutainer {
-    top: 130px;
+    top: 180px;
     right: 105px;
   }
   .block-about-courses__text:before {
@@ -171,6 +161,8 @@ export default {
   .block-about-courses__coutainer {
     position:initial;
     margin-top:19px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .block-about-courses__text:before {
     margin-right: 3px;

@@ -2,24 +2,24 @@
 .list-of-courses
   #list-of-courses__title.list-of-courses__title.html__title_white Наши курсы
   .list-of-courses__coutainer
-    //- .list-of-courses__column1
-    .list-of-courses__course.html__subtitle_white_medium
+
+    .list-of-courses__course(@click="$router.push({name: 'course',  params: {title: soundEngineering.title,  text:soundEngineering.text}})").html__subtitle_white_medium
       span Звукорежессура
-    .list-of-courses__course.html__subtitle_white_medium 
+    .list-of-courses__course(@click="$router.push({name: 'course',  params: {title: design.title,  text:design.text}})").html__subtitle_white_medium 
       span Дизайн
-    .list-of-courses__course.html__subtitle_white_medium 
+    .list-of-courses__course(@click="$router.push({name: 'course',  params: {title: scratch.title,  text:scratch.text}})").html__subtitle_white_medium 
       span Программирование<br>на языке Scratch
-    .list-of-courses__course.html__subtitle_white_medium 
+    .list-of-courses__course(@click="$router.push({name: 'course',  params: {title: frontEnd.title,  text:frontEnd.text}})").html__subtitle_white_medium 
       span Создание сайтов<br>Front-end разработка
 
     //- .list-of-courses__column2
-    .list-of-courses__course.html__subtitle_white_medium 
+    .list-of-courses__course(@click="$router.push({name: 'course',  params: {title: python.title,  text:python.text}})").html__subtitle_white_medium 
       span Программирование<br>на языке Python
-    .list-of-courses__course.html__subtitle_white_medium 
+    .list-of-courses__course(@click="$router.push({name: 'course',  params: {title: graphicDesign.title,  text:graphicDesign.text}})").html__subtitle_white_medium 
       span Графический дизайн
-    .list-of-courses__course.html__subtitle_white_medium 
+    .list-of-courses__course(@click="$router.push({name: 'course',  params: {title: modeling.title,  text:modeling.text}})").html__subtitle_white_medium 
       span 3D-Моделирование
-    .list-of-courses__course.html__subtitle_white_medium 
+    .list-of-courses__course(@click="$router.push({name: 'course',  params: {title: unity.title,  text:unity.text}})").html__subtitle_white_medium 
       span Разработка игр<br>в UNITY
 
     .list-of-courses__delimiter
@@ -31,14 +31,28 @@
     .list-of-courses__vertical-separation5
     .list-of-courses__vertical-separation6
     .list-of-courses__vertical-separation7
-  img.list-of-courses__img(src="@/assets/img/list-of-courses__img.png")
+  //- img.list-of-courses__img(src="@/assets/img/list-of-courses__img.png")
 </template>
 
 <script>
 
 export default {
   name:'list-of-courses',
+  data() {
+    return { 
+      soundEngineering:{title: 'Звукорежессура',  text:'Если Вы любите музыку и хотите связать с ней всю свою жизнь - эта профессия для Вас! '},
+      scratch:{title: 'Программирование на языке Scratch',  text:'Для лялябомов'},
+      python:{title: 'Программирование на языке Python',  text:'Для крутых'},
+      modeling:{title: '3D-Моделирование',  text:'Выпендрёжники'},
+      design:{title: 'Дизайн',  text:'Почти моделирование тока нет'},
+      frontEnd:{title: 'Создание сайтов Front-end разработка',  text:'Для Гены'},
+      graphicDesign:{title: 'Дизайн Для Олегов',  text:'Флекс не релакс'},
+      unity:{title: 'Разработка игр в UNITY',  text:'Где можно применить моделирование'},
+    };
+  },
 };
+
+
 </script>
 
 <style>

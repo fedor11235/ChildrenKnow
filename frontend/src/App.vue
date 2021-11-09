@@ -1,6 +1,7 @@
 <template lang="pug">
 #app
-  main-page
+  //- main-page
+  router-view
 
 </template>
 <script>
